@@ -1,6 +1,12 @@
 <header class="masthead">
+	{% if site.data.settings.logo %}
+	<a href="{{ site.github.url }}/">
+		<img src="/assets/img/{{ site.data.settings.logo }}" alt="{{ site.data.settings.title }}" class="site-logo"></a>
+	{% endif %}
+	{% if site.data.settings.logo  == "" or site.data.settings.logo  == nil %}
   <h3 class="masthead-title">
     <a href="{{ site.github.url }}/">{{ site.data.settings.title }}</a>
+    {%endif%}
     <small class="masthead-subtitle">{{ site.data.settings.tagline }}</small>
     {% include menu.html %}
   </h3>

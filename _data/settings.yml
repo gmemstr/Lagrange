@@ -22,4 +22,10 @@ social:
 - {icon: 'envelope', link: 'mailto:l.nguyen.paul@gmail.com'}
 - {icon: 'rss-square', link: 'feed.xml'}
 
+# Remove or set to false to remove LaTeX JS library
+latex: true
+
+# Optional logo, replaces masthead text
+# logo: 'cards.jpg'
+
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
