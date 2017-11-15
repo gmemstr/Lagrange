@@ -23,12 +23,12 @@ layout: default
     {% else %}{{ d }}th{% endcase %},
   {{ page.date | date: "%Y" }}
   by
-  {% if page.author %}
+  {% if site.data.authors[page.author].name %}
     {{ site.data.authors[page.author].name }}
     (<a href="https://twitter.com/{{ site.data.authors[page.author].twitter }}">@{{ site.data.authors[page.author].twitter }}</a>)
   {% else %}
-    {{ site.data.authors.gitgalaxy.name }}
-    (<a href="https://twitter.com/gitgalaxy">@gitgalaxy</a>)
+    {{ site.data.authors.primary.name }}
+    (<a href="https://twitter.com/{{ site.data.authors.primary.twitter }}">@{{ site.data.authors.primary.twitter }}</a>)
   {% endif %}
 </span>
 
