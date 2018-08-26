@@ -5,9 +5,8 @@
 	{% endif %}
 	{% if site.data.settings.logo  == "" or site.data.settings.logo  == nil %}
   <h3 class="masthead-title">
-    <a href="{{ site.github.url }}/">{{ site.data.settings.title }}</a>
-    {%endif%}
-    <small class="masthead-subtitle">{{ site.data.settings.tagline }}</small>
+    <a href="{{ site.github.url }}/">{{ site.title }}</a>
+    <small class="masthead-subtitle">{{ site.description }}</small>
     {% include menu.html %}
   </h3>
 </header>
